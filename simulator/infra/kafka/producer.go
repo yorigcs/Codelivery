@@ -7,7 +7,7 @@ import (
 	ckafka "github.com/confluentinc/confluent-kafka-go/v2/kafka"
 )
 
-func NewKafkaProcuded() *ckafka.Producer {
+func NewKafkaProcuder() *ckafka.Producer {
 	configMap := &ckafka.ConfigMap{
 		"bootstrap.servers": os.Getenv("KafkaBootstrapServers"),
 	}
