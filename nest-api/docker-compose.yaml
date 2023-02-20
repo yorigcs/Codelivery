@@ -15,7 +15,7 @@ services:
       - db
   
   db:
-    image: mongo:4.4.4
+    image: mongo
     restart: always
     volumes:
       - ./.docker/dbdata:/data/db
@@ -23,7 +23,7 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=root
-      - MONGO_INITDB_DATABASE=simulatordb
+      - MONGO_INITDB_DATABASE=nest
   
   mongo-express:
     image: mongo-express
