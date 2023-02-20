@@ -35,3 +35,7 @@ coverage
 !.vscode/extensions.json
 
 .env
+
+nest-api/.docker/dbdata
+nest-api/.history 
+
